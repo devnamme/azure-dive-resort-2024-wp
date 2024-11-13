@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
-
 *,
-::before,
-::after {
+:after,
+:before {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -27,7 +26,7 @@
   --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -55,7 +54,6 @@
   --tw-contain-paint: ;
   --tw-contain-style: ;
 }
-
 ::backdrop {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -81,7 +79,7 @@
   --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -113,82 +111,39 @@
 /*
 ! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
 */
-
-/*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
-
 *,
-::before,
-::after {
-  box-sizing: border-box; /* 1 */
-  border-width: 0; /* 2 */
-  border-style: solid; /* 2 */
-  border-color: currentColor; /* 2 */
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid;
 }
-
-::before,
-::after {
+:after,
+:before {
   --tw-content: "";
 }
-
-/*
-1. Use a consistent sensible line-height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size.
-4. Use the user's configured `sans` font-family by default.
-5. Use the user's configured `sans` font-feature-settings by default.
-6. Use the user's configured `sans` font-variation-settings by default.
-7. Disable tap highlights on iOS
-*/
-
-html,
-:host {
-  line-height: 1.5; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -moz-tab-size: 4; /* 3 */
-  tab-size: 4; /* 3 */
-  font-family: "Rethink Sans", sans-serif; /* 4 */
-  font-feature-settings: normal; /* 5 */
-  font-variation-settings: normal; /* 6 */
-  -webkit-tap-highlight-color: transparent; /* 7 */
+:host,
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  font-family: Rethink Sans, sans-serif;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  -webkit-tap-highlight-color: transparent;
 }
-
-/*
-1. Remove the margin in all browsers.
-2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
-*/
-
 body {
-  margin: 0; /* 1 */
-  line-height: inherit; /* 2 */
+  margin: 0;
+  line-height: inherit;
 }
-
-/*
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-3. Ensure horizontal rules are visible by default.
-*/
-
 hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
-  border-top-width: 1px; /* 3 */
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
 }
-
-/*
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-
 abbr:where([title]) {
   text-decoration: underline dotted;
 }
-
-/*
-Remove the default font size and weight for headings.
-*/
-
 h1,
 h2,
 h3,
@@ -198,55 +153,27 @@ h6 {
   font-size: inherit;
   font-weight: inherit;
 }
-
-/*
-Reset links to optimize for opt-in styling instead of opt-out.
-*/
-
 a {
   color: inherit;
   text-decoration: inherit;
 }
-
-/*
-Add the correct font weight in Edge and Safari.
-*/
-
 b,
 strong {
   font-weight: bolder;
 }
-
-/*
-1. Use the user's configured `mono` font-family by default.
-2. Use the user's configured `mono` font-feature-settings by default.
-3. Use the user's configured `mono` font-variation-settings by default.
-4. Correct the odd `em` font sizing in all browsers.
-*/
-
 code,
 kbd,
-samp,
-pre {
+pre,
+samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace; /* 1 */
-  font-feature-settings: normal; /* 2 */
-  font-variation-settings: normal; /* 3 */
-  font-size: 1em; /* 4 */
+    Liberation Mono, Courier New, monospace;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-size: 1em;
 }
-
-/*
-Add the correct font size in all browsers.
-*/
-
 small {
   font-size: 80%;
 }
-
-/*
-Prevent `sub` and `sup` elements from affecting the line height in all browsers.
-*/
-
 sub,
 sup {
   font-size: 75%;
@@ -254,149 +181,76 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
-
 sub {
   bottom: -0.25em;
 }
-
 sup {
   top: -0.5em;
 }
-
-/*
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-3. Remove gaps between table borders by default.
-*/
-
 table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
-  border-collapse: collapse; /* 3 */
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
 }
-
-/*
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-3. Remove default padding in all browsers.
-*/
-
 button,
 input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-feature-settings: inherit; /* 1 */
-  font-variation-settings: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  font-weight: inherit; /* 1 */
-  line-height: inherit; /* 1 */
-  letter-spacing: inherit; /* 1 */
-  color: inherit; /* 1 */
-  margin: 0; /* 2 */
-  padding: 0; /* 3 */
+  font-family: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
 }
-
-/*
-Remove the inheritance of text transform in Edge and Firefox.
-*/
-
 button,
 select {
   text-transform: none;
 }
-
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Remove default button styles.
-*/
-
 button,
 input:where([type="button"]),
 input:where([type="reset"]),
 input:where([type="submit"]) {
-  -webkit-appearance: button; /* 1 */
-  background-color: transparent; /* 2 */
-  background-image: none; /* 2 */
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
 }
-
-/*
-Use the modern Firefox focus style for all focusable elements.
-*/
-
 :-moz-focusring {
   outline: auto;
 }
-
-/*
-Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
-*/
-
 :-moz-ui-invalid {
   box-shadow: none;
 }
-
-/*
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-
 progress {
   vertical-align: baseline;
 }
-
-/*
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
 }
-
-/*
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
 }
-
-/*
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
-
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to `inherit` in Safari.
-*/
-
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  font: inherit;
 }
-
-/*
-Add the correct display in Chrome and Safari.
-*/
-
 summary {
   display: list-item;
 }
-
-/*
-Removes the default spacing and border for appropriate elements.
-*/
-
 blockquote,
-dl,
 dd,
+dl,
+figure,
 h1,
 h2,
 h3,
@@ -404,112 +258,65 @@ h4,
 h5,
 h6,
 hr,
-figure,
 p,
 pre {
   margin: 0;
 }
-
 fieldset {
   margin: 0;
-  padding: 0;
 }
-
+fieldset,
 legend {
   padding: 0;
 }
-
+menu,
 ol,
-ul,
-menu {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-/*
-Reset default styling for dialogs.
-*/
-
 dialog {
   padding: 0;
 }
-
-/*
-Prevent resizing textareas horizontally by default.
-*/
-
 textarea {
   resize: vertical;
 }
-
-/*
-1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
-2. Set the default placeholder color to the user's configured gray 400 color.
-*/
-
 input::placeholder,
 textarea::placeholder {
-  opacity: 1; /* 1 */
-  color: #9ca3af; /* 2 */
+  opacity: 1;
+  color: #9ca3af;
 }
-
-/*
-Set the default cursor for buttons.
-*/
-
-button,
-[role="button"] {
+[role="button"],
+button {
   cursor: pointer;
 }
-
-/*
-Make sure disabled buttons don't get the pointer cursor.
-*/
-
 :disabled {
   cursor: default;
 }
-
-/*
-1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
-2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
-   This can trigger a poorly considered lint error in some tools but is included by design.
-*/
-
-img,
-svg,
-video,
-canvas,
 audio,
-iframe,
+canvas,
 embed,
-object {
-  display: block; /* 1 */
-  vertical-align: middle; /* 2 */
+iframe,
+img,
+object,
+svg,
+video {
+  display: block;
+  vertical-align: middle;
 }
-
-/*
-Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
-*/
-
 img,
 video {
   max-width: 100%;
   height: auto;
 }
-
-/* Make elements with the HTML hidden attribute stay hidden by default */
-
 [hidden] {
   display: none;
 }
-
 :root {
   --h-header: 7.625rem;
   --h-screen-noheader: calc(100vh - var(--h-header));
 }
-
 h1 {
   font-family: var(--font-kelvinch-final), serif;
   font-size: 2.5rem;
@@ -517,7 +324,6 @@ h1 {
   letter-spacing: -0.04em;
   font-weight: 700;
 }
-
 @media (min-width: 768px) {
   h1 {
     font-family: var(--font-kelvinch-final), serif;
@@ -527,7 +333,6 @@ h1 {
     font-weight: 700;
   }
 }
-
 h2 {
   font-family: var(--font-kelvinch-final), serif;
   font-size: 2rem;
@@ -535,7 +340,6 @@ h2 {
   letter-spacing: -0.04em;
   font-weight: 700;
 }
-
 @media (min-width: 768px) {
   h2 {
     font-family: var(--font-kelvinch-final), serif;
@@ -545,7 +349,6 @@ h2 {
     font-weight: 700;
   }
 }
-
 h3 {
   font-family: var(--font-kelvinch-final), serif;
   font-size: 1.5rem;
@@ -553,7 +356,6 @@ h3 {
   letter-spacing: -0.04em;
   font-weight: 700;
 }
-
 @media (min-width: 768px) {
   h3 {
     font-family: var(--font-kelvinch-final), serif;
@@ -563,7 +365,6 @@ h3 {
     font-weight: 700;
   }
 }
-
 h4 {
   font-family: var(--font-kelvinch-final), serif;
   font-size: 1.5rem;
@@ -571,7 +372,6 @@ h4 {
   letter-spacing: -0.04em;
   font-weight: 700;
 }
-
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(255 245 235 / var(--tw-bg-opacity));
@@ -580,44 +380,39 @@ body {
   --tw-text-opacity: 1;
   color: rgb(93 63 43 / var(--tw-text-opacity));
 }
-
 @media (min-width: 768px) {
   :root {
     --h-header: 5rem;
   }
 }
 .h1 {
-  font-family: var(--font-kelvinch-final), serif;
   font-size: 3rem;
+}
+.h1,
+.h2 {
+  font-family: var(--font-kelvinch-final), serif;
   line-height: 1.2;
   letter-spacing: -0.04em;
   font-weight: 700;
 }
 .h2 {
-  font-family: var(--font-kelvinch-final), serif;
   font-size: 2.5rem;
-  line-height: 1.2;
-  letter-spacing: -0.04em;
-  font-weight: 700;
 }
 .h3 {
-  font-family: var(--font-kelvinch-final), serif;
   font-size: 2rem;
+}
+.h3,
+.h4 {
+  font-family: var(--font-kelvinch-final), serif;
   line-height: 1.2;
   letter-spacing: -0.04em;
   font-weight: 700;
 }
 .h4 {
-  font-family: var(--font-kelvinch-final), serif;
   font-size: 1.5rem;
-  line-height: 1.2;
-  letter-spacing: -0.04em;
-  font-weight: 700;
 }
+.text-overline,
 .text-overline-big {
-  text-transform: uppercase;
-}
-.text-overline {
   text-transform: uppercase;
 }
 .marquee-left {
@@ -657,7 +452,7 @@ body {
   bottom: -95%;
 }
 .left-0 {
-  left: 0px;
+  left: 0;
 }
 .left-\[-2\%\] {
   left: -2%;
@@ -672,7 +467,7 @@ body {
   left: 55%;
 }
 .right-0 {
-  right: 0px;
+  right: 0;
 }
 .right-5 {
   right: 1.25rem;
@@ -681,7 +476,7 @@ body {
   right: -40%;
 }
 .top-0 {
-  top: 0px;
+  top: 0;
 }
 .top-header {
   top: var(--h-header);
@@ -726,7 +521,7 @@ body {
   grid-column: span 3 / span 3;
 }
 .col-span-full {
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
 }
 .-mx-4 {
   margin-left: -1rem;
@@ -798,7 +593,7 @@ body {
   display: none;
 }
 .aspect-video {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
 }
 .size-12 {
   width: 3rem;
@@ -901,7 +696,7 @@ body {
   height: var(--h-screen-noheader);
 }
 .min-h-0 {
-  min-height: 0px;
+  min-height: 0;
 }
 .min-h-\[240px\] {
   min-height: 240px;
@@ -940,7 +735,7 @@ body {
   width: 100%;
 }
 .min-w-0 {
-  min-width: 0px;
+  min-width: 0;
 }
 .min-w-\[calc\(100\%\+48px\)\] {
   min-width: calc(100% + 48px);
@@ -989,51 +784,51 @@ body {
 }
 .-translate-y-\[140px\] {
   --tw-translate-y: -140px;
+}
+.-translate-y-\[140px\],
+.-translate-y-\[60\%\] {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .-translate-y-\[60\%\] {
   --tw-translate-y: -60%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .translate-x-full {
   --tw-translate-x: 100%;
+}
+.translate-x-full,
+.translate-y-16 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .translate-y-16 {
   --tw-translate-y: 4rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .-rotate-2 {
   --tw-rotate: -2deg;
+}
+.-rotate-2,
+.rotate-180 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .rotate-180 {
   --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .rotate-2 {
   --tw-rotate: 2deg;
+}
+.-scale-x-100,
+.rotate-2 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .-scale-x-100 {
   --tw-scale-x: -1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .cursor-pointer {
   cursor: pointer;
@@ -1278,7 +1073,7 @@ body {
   border-color: rgb(93 63 43 / var(--tw-border-opacity));
 }
 .border-earth\/30 {
-  border-color: rgb(93 63 43 / 0.3);
+  border-color: rgba(93, 63, 43, 0.3);
 }
 .border-ocean-blue {
   --tw-border-opacity: 1;
@@ -1308,10 +1103,10 @@ body {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-black\/25 {
-  background-color: rgb(0 0 0 / 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 .bg-earth\/20 {
-  background-color: rgb(93 63 43 / 0.2);
+  background-color: rgba(93, 63, 43, 0.2);
 }
 .bg-ocean-blue {
   --tw-bg-opacity: 1;
@@ -1332,7 +1127,7 @@ body {
   background-size: cover;
 }
 .bg-\[70\%_center\] {
-  background-position: 70% center;
+  background-position: 70%;
 }
 .bg-\[center_25\%\] {
   background-position: center 25%;
@@ -1352,11 +1147,9 @@ body {
 .bg-\[center_90\%\] {
   background-position: center 90%;
 }
-.bg-\[center_center\] {
-  background-position: center center;
-}
+.bg-\[center_center\],
 .bg-center {
-  background-position: center;
+  background-position: 50%;
 }
 .object-contain {
   object-fit: contain;
@@ -1463,7 +1256,7 @@ body {
   padding-bottom: 2rem;
 }
 .pb-0 {
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
@@ -1557,7 +1350,7 @@ body {
   color: rgb(255 245 235 / var(--tw-text-opacity));
 }
 .text-sand\/80 {
-  color: rgb(255 245 235 / 0.8);
+  color: rgba(255, 245, 235, 0.8);
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -1593,29 +1386,26 @@ body {
   transition-property: color, background-color, border-color,
     text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 0.15s;
 }
 .transition-opacity {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 0.15s;
 }
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 0.15s;
 }
-
 @keyframes marquee-left {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0);
   }
-
-  100% {
-    transform: translate(-100%, 0);
+  to {
+    transform: translate(-100%);
   }
 }
-
 @media (min-width: 768px) {
   .sm\:h1 {
     font-family: var(--font-kelvinch-final), serif;
@@ -1624,844 +1414,686 @@ body {
     letter-spacing: -0.04em;
     font-weight: 700;
   }
-
   .sm\:text-overline {
     text-transform: uppercase;
   }
 }
-
 .hover\:border-earth:hover {
   --tw-border-opacity: 1;
   border-color: rgb(93 63 43 / var(--tw-border-opacity));
 }
-
 .hover\:border-pale-blue:hover {
   --tw-border-opacity: 1;
   border-color: rgb(222 236 234 / var(--tw-border-opacity));
 }
-
 .hover\:border-sand:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 245 235 / var(--tw-border-opacity));
 }
-
 .hover\:bg-pale-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(222 236 234 / var(--tw-bg-opacity));
 }
-
 .hover\:bg-sand:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 245 235 / var(--tw-bg-opacity));
 }
-
 .hover\:text-ocean-blue:hover {
   --tw-text-opacity: 1;
   color: rgb(12 129 180 / var(--tw-text-opacity));
 }
-
 .disabled\:opacity-50:disabled {
   opacity: 0.5;
 }
-
 .data-\[active\=true\]\:pointer-events-auto[data-active="true"] {
   pointer-events: auto;
 }
-
 .data-\[visible\=false\]\:hidden[data-visible="false"] {
   display: none;
 }
-
 .data-\[active\=true\]\:translate-x-0[data-active="true"] {
   --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-
 .data-\[active\=true\]\:bg-pale-blue[data-active="true"] {
   --tw-bg-opacity: 1;
   background-color: rgb(222 236 234 / var(--tw-bg-opacity));
 }
-
 .data-\[active\=true\]\:bg-white\/50[data-active="true"] {
-  background-color: rgb(255 255 255 / 0.5);
+  background-color: hsla(0, 0%, 100%, 0.5);
 }
-
 .data-\[transparent\=true\]\:bg-ocean-blue\/75[data-transparent="true"] {
-  background-color: rgb(12 129 180 / 0.75);
+  background-color: rgba(12, 129, 180, 0.75);
 }
-
 .data-\[transparent\]\:bg-pale-blue\/75[data-transparent] {
-  background-color: rgb(222 236 234 / 0.75);
+  background-color: rgba(222, 236, 234, 0.75);
 }
-
 .data-\[active\=true\]\:opacity-100[data-active="true"] {
   opacity: 1;
 }
-
 @media (min-width: 576px) {
   .xs\:sticky {
     position: sticky;
   }
-
   .xs\:order-1 {
     order: 1;
   }
-
   .xs\:order-2 {
     order: 2;
   }
-
   .xs\:block {
     display: block;
   }
-
   .xs\:flex {
     display: flex;
   }
-
   .xs\:h-\[350px\] {
     height: 350px;
   }
-
   .xs\:h-screen-noheader {
     height: var(--h-screen-noheader);
   }
-
   .xs\:min-h-0 {
-    min-height: 0px;
+    min-height: 0;
   }
-
   .xs\:min-h-\[calc\(1\.5\*var\(--h-screen-noheader\)\)\] {
     min-height: calc(1.5 * var(--h-screen-noheader));
   }
-
   .xs\:min-h-screen-noheader {
     min-height: var(--h-screen-noheader);
   }
-
   .xs\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
   .xs\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
   .xs\:grid-cols-\[1fr\] {
     grid-template-columns: 1fr;
   }
-
   .xs\:items-start {
     align-items: flex-start;
   }
-
   .xs\:gap-10 {
     gap: 2.5rem;
   }
-
   .xs\:gap-5 {
     gap: 1.25rem;
   }
-
   .xs\:gap-8 {
     gap: 2rem;
   }
-
   .xs\:self-auto {
     align-self: auto;
   }
-
   .xs\:rounded-br-\[320px\] {
     border-bottom-right-radius: 320px;
   }
-
   .xs\:rounded-tl-\[320px\] {
     border-top-left-radius: 320px;
   }
-
   .xs\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-
   .xs\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
-
   .xs\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
   }
-
   .xs\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-
   .xs\:py-25 {
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
   }
-
   .xs\:pl-0 {
-    padding-left: 0px;
+    padding-left: 0;
   }
-
   .xs\:pl-10 {
     padding-left: 2.5rem;
   }
-
   .xs\:pr-0 {
-    padding-right: 0px;
+    padding-right: 0;
   }
-
   .xs\:pr-10 {
     padding-right: 2.5rem;
   }
-
   .xs\:text-left {
     text-align: left;
   }
-
   .xs\:text-start {
     text-align: start;
   }
 }
-
 @media (min-width: 768px) {
   .sm\:relative {
     position: relative;
   }
-
   .sm\:right-\[-40\%\] {
     right: -40%;
   }
-
   .sm\:top-\[-50\%\] {
     top: -50%;
   }
-
   .sm\:order-1 {
     order: 1;
   }
-
   .sm\:order-2 {
     order: 2;
   }
-
   .sm\:order-3 {
     order: 3;
   }
-
   .sm\:order-4 {
     order: 4;
   }
-
   .sm\:col-span-1 {
     grid-column: span 1 / span 1;
   }
-
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
-
   .sm\:col-span-3 {
     grid-column: span 3 / span 3;
   }
-
   .sm\:row-span-2 {
     grid-row: span 2 / span 2;
   }
-
   .sm\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
   }
-
   .sm\:mb-10 {
     margin-bottom: 2.5rem;
   }
-
   .sm\:mb-14 {
     margin-bottom: 3.5rem;
   }
-
   .sm\:mb-15 {
     margin-bottom: 3.75rem;
   }
-
   .sm\:mb-20 {
     margin-bottom: 5rem;
   }
-
   .sm\:mb-4 {
     margin-bottom: 1rem;
   }
-
   .sm\:mb-5 {
     margin-bottom: 1.25rem;
   }
-
   .sm\:mb-8 {
     margin-bottom: 2rem;
   }
-
   .sm\:mb-\[-256px\] {
     margin-bottom: -256px;
   }
-
   .sm\:ml-\[25\%\] {
     margin-left: 25%;
   }
-
   .sm\:ml-\[5\%\] {
     margin-left: 5%;
   }
-
   .sm\:mt-14 {
     margin-top: 3.5rem;
   }
-
   .sm\:block {
     display: block;
   }
-
   .sm\:flex {
     display: flex;
   }
-
   .sm\:grid {
     display: grid;
   }
-
   .sm\:hidden {
     display: none;
   }
-
   .sm\:size-\[100\%\] {
     width: 100%;
     height: 100%;
   }
-
   .sm\:h-\[250px\] {
     height: 250px;
   }
-
   .sm\:h-\[425px\] {
     height: 425px;
   }
-
   .sm\:h-\[450px\] {
     height: 450px;
   }
-
   .sm\:h-\[calc\(min\(600px\2c var\(--h-screen-noheader\)\)\+200px\)\] {
     height: calc(min(600px, var(--h-screen-noheader)) + 200px);
   }
-
   .sm\:h-\[calc\(min\(600px\2c var\(--h-screen-noheader\)\)-200px\)\] {
     height: calc(min(600px, var(--h-screen-noheader)) - 200px);
   }
-
   .sm\:h-\[min\(600px\2c var\(--h-screen-noheader\)\)\] {
     height: min(600px, var(--h-screen-noheader));
   }
-
   .sm\:h-auto {
     height: auto;
   }
-
   .sm\:h-header {
     height: var(--h-header);
   }
-
   .sm\:h-screen-noheader {
     height: var(--h-screen-noheader);
   }
-
   .sm\:min-h-\[450px\] {
     min-height: 450px;
   }
-
   .sm\:min-h-screen-noheader {
     min-height: var(--h-screen-noheader);
   }
-
   .sm\:w-\[300px\] {
     width: 300px;
   }
-
   .sm\:w-\[450px\] {
     width: 450px;
   }
-
   .sm\:w-auto {
     width: auto;
   }
-
   .sm\:w-full {
     width: 100%;
   }
-
   .sm\:min-w-0 {
-    min-width: 0px;
+    min-width: 0;
   }
-
   .sm\:max-w-\[420px\] {
     max-width: 420px;
   }
-
   .sm\:\!translate-y-16 {
     --tw-translate-y: 4rem !important;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y))
       rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
       scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
   }
-
   .sm\:translate-y-0 {
     --tw-translate-y: 0px;
+  }
+  .sm\:translate-y-0,
+  .sm\:translate-y-\[-256px\] {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y))
       rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
       scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
-
   .sm\:translate-y-\[-256px\] {
     --tw-translate-y: -256px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
-
   .sm\:grid-flow-col {
     grid-auto-flow: column;
   }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
   .sm\:grid-cols-\[14fr_27fr_14fr\] {
     grid-template-columns: 14fr 27fr 14fr;
   }
-
   .sm\:grid-cols-\[1fr_400px_1fr\] {
     grid-template-columns: 1fr 400px 1fr;
   }
-
   .sm\:grid-cols-\[27fr_15fr_13fr\] {
     grid-template-columns: 27fr 15fr 13fr;
   }
-
   .sm\:grid-cols-\[2fr_3fr_3fr\] {
     grid-template-columns: 2fr 3fr 3fr;
   }
-
   .sm\:grid-cols-\[2rem_1fr\] {
     grid-template-columns: 2rem 1fr;
   }
-
   .sm\:grid-cols-\[3fr_2fr_3fr\] {
     grid-template-columns: 3fr 2fr 3fr;
   }
-
   .sm\:grid-cols-\[auto_auto_auto\] {
     grid-template-columns: auto auto auto;
   }
-
   .sm\:grid-cols-\[repeat\(3\2c auto\)\] {
     grid-template-columns: repeat(3, auto);
   }
-
   .sm\:grid-rows-2 {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
-
   .sm\:grid-rows-3 {
     grid-template-rows: repeat(3, minmax(0, 1fr));
   }
-
   .sm\:grid-rows-4 {
     grid-template-rows: repeat(4, minmax(0, 1fr));
   }
-
   .sm\:grid-rows-\[5fr_4fr\] {
     grid-template-rows: 5fr 4fr;
   }
-
   .sm\:items-center {
     align-items: center;
   }
-
   .sm\:justify-start {
     justify-content: flex-start;
   }
-
   .sm\:gap-14 {
     gap: 3.5rem;
   }
-
   .sm\:gap-16 {
     gap: 4rem;
   }
-
   .sm\:gap-18 {
     gap: 4.5rem;
   }
-
   .sm\:gap-22\.5 {
     gap: 5.625rem;
   }
-
   .sm\:gap-25 {
     gap: 6.25rem;
   }
-
   .sm\:gap-32 {
     gap: 8rem;
   }
-
   .sm\:gap-4 {
     gap: 1rem;
   }
-
   .sm\:gap-5 {
     gap: 1.25rem;
   }
-
   .sm\:gap-6 {
     gap: 1.5rem;
   }
-
   .sm\:gap-9 {
     gap: 2.25rem;
   }
-
   .sm\:gap-y-10 {
     row-gap: 2.5rem;
   }
-
   .sm\:gap-y-3 {
     row-gap: 0.75rem;
   }
-
   .sm\:rounded-2xl {
     border-radius: 1rem;
   }
-
   .sm\:rounded-\[5rem\] {
     border-radius: 5rem;
   }
-
   .sm\:rounded-lg {
     border-radius: 0.5rem;
   }
-
   .sm\:rounded-r-lg {
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
   }
-
   .sm\:rounded-bl-\[120px\] {
     border-bottom-left-radius: 120px;
   }
-
   .sm\:rounded-tl-\[120px\] {
     border-top-left-radius: 120px;
   }
-
   .sm\:rounded-tl-none {
-    border-top-left-radius: 0px;
+    border-top-left-radius: 0;
   }
-
   .sm\:rounded-tr-\[120px\] {
     border-top-right-radius: 120px;
   }
-
   .sm\:object-contain {
     object-fit: contain;
   }
-
   .sm\:p-0 {
-    padding: 0px;
+    padding: 0;
   }
-
   .sm\:p-25 {
     padding: 6.25rem;
   }
-
   .sm\:p-4 {
     padding: 1rem;
   }
-
   .sm\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
-
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
-
   .sm\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
-
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
   .sm\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
-
   .sm\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-
   .sm\:py-22\.5 {
     padding-top: 5.625rem;
     padding-bottom: 5.625rem;
   }
-
   .sm\:py-25 {
     padding-top: 6.25rem;
     padding-bottom: 6.25rem;
   }
-
   .sm\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
-
   .sm\:py-45 {
     padding-top: 11.25rem;
     padding-bottom: 11.25rem;
   }
-
   .sm\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
-
   .sm\:pb-0 {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
-
   .sm\:pb-16 {
     padding-bottom: 4rem;
   }
-
   .sm\:pb-23 {
     padding-bottom: 5.75rem;
   }
-
   .sm\:pb-25 {
     padding-bottom: 6.25rem;
   }
-
   .sm\:pl-22\.5 {
     padding-left: 5.625rem;
   }
-
   .sm\:pr-18 {
     padding-right: 4.5rem;
   }
-
   .sm\:pr-22\.5 {
     padding-right: 5.625rem;
   }
-
   .sm\:pt-10 {
     padding-top: 2.5rem;
   }
-
   .sm\:pt-16 {
     padding-top: 4rem;
   }
-
   .sm\:pt-18 {
     padding-top: 4.5rem;
   }
-
   .sm\:pt-22\.5 {
     padding-top: 5.625rem;
   }
-
   .sm\:text-left {
     text-align: left;
   }
-
   .sm\:text-center {
     text-align: center;
   }
-
   .sm\:text-h3 {
     font-size: 2rem;
     line-height: 1.2;
     letter-spacing: -0.04em;
     font-weight: 700;
   }
-
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.4;
   }
-
   .sm\:text-overline {
     font-size: 0.875rem;
     line-height: 1.3;
     font-weight: 700;
   }
-
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.4;
   }
-
   .sm\:opacity-100 {
     opacity: 1;
   }
 }
-
 @media (min-width: 1024px) {
   .md\:order-1 {
     order: 1;
   }
-
   .md\:order-2 {
     order: 2;
   }
-
   .md\:mb-10 {
     margin-bottom: 2.5rem;
   }
-
   .md\:ml-\[40\%\] {
     margin-left: 40%;
   }
-
   .md\:flex {
     display: flex;
   }
-
   .md\:grid {
     display: grid;
   }
-
   .md\:hidden {
     display: none;
   }
-
   .md\:size-4 {
     width: 1rem;
     height: 1rem;
   }
-
   .md\:h-\[400px\] {
     height: 400px;
   }
-
   .md\:h-\[450px\] {
     height: 450px;
   }
-
   .md\:w-\[600px\] {
     width: 600px;
   }
-
   .md\:w-fit {
     width: fit-content;
   }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
   .md\:grid-cols-\[1fr_550px_1fr\] {
     grid-template-columns: 1fr 550px 1fr;
   }
-
   .md\:flex-row {
     flex-direction: row;
   }
-
   .md\:items-start {
     align-items: flex-start;
   }
-
   .md\:gap-16 {
     gap: 4rem;
   }
-
   .md\:gap-22\.5 {
     gap: 5.625rem;
   }
-
   .md\:gap-x-20 {
     column-gap: 5rem;
   }
-
   .md\:gap-y-0 {
-    row-gap: 0px;
+    row-gap: 0;
   }
-
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-
   .md\:pr-22\.5 {
     padding-right: 5.625rem;
   }
-
   .md\:text-left {
     text-align: left;
   }
 }
-
 @media (min-width: 1280px) {
   .lg\:ml-\[50\%\] {
     margin-left: 50%;
   }
 }
-
 @media (min-width: 1440px) {
   .xl\:w-\[600px\] {
     width: 600px;
   }
-
   .xl\:min-w-\[600px\] {
     min-width: 600px;
   }
 }
-
 @media (min-width: 1920px) {
   .\32xl\:gap-45 {
     gap: 11.25rem;
   }
-
   .\32xl\:pl-45 {
     padding-left: 11.25rem;
   }
-
   .\32xl\:pr-45 {
     padding-right: 11.25rem;
   }
+}
+@font-face {
+  font-family: __kelvinch_41f3ce;
+  src: url(/_next/static/media/65dc96f39d7e4d44-s.p.otf) format("opentype");
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: __kelvinch_41f3ce;
+  src: url(/_next/static/media/4c96fe55a27d9772-s.p.otf) format("opentype");
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: __kelvinch_41f3ce;
+  src: url(/_next/static/media/88b42b371e85969b-s.p.otf) format("opentype");
+  font-display: swap;
+  font-weight: 700;
+}
+@font-face {
+  font-family: __kelvinch_41f3ce;
+  src: url(/_next/static/media/1b4e093972e2fdee-s.p.otf) format("opentype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: __kelvinch_Fallback_41f3ce;
+  src: local("Arial");
+  ascent-override: 101.26%;
+  descent-override: 30.86%;
+  line-gap-override: 0%;
+  size-adjust: 101.26%;
+}
+.__className_41f3ce {
+  font-family: __kelvinch_41f3ce, __kelvinch_Fallback_41f3ce;
 }

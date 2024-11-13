@@ -1,29 +1,29 @@
 @font-face {
   font-family: Kelvinch;
   font-weight: 400;
-  src: url("../fonts/Kelvinch/Kelvinch-Roman.otf");
+  src: url("../../fonts/Kelvinch/Kelvinch-Roman.otf");
 }
 
 @font-face {
   font-family: Kelvinch;
   font-weight: 400;
   font-style: italic;
-  src: url("../fonts/Kelvinch/Kelvinch-Italic.otf");
+  src: url("../../fonts/Kelvinch/Kelvinch-Italic.otf");
 }
 
 @font-face {
   font-family: Kelvinch;
   font-weight: 700;
-  src: url("../fonts/Kelvinch/Kelvinch-Bold.otf");
+  src: url("../../fonts/Kelvinch/Kelvinch-Bold.otf");
 }
 
 @font-face {
   font-family: Kelvinch;
   font-weight: 700;
   font-style: italic;
-  src: url("../fonts/Kelvinch/Kelvinch-BoldItalic.otf");
+  src: url("../../fonts/Kelvinch/Kelvinch-BoldItalic.otf");
 }
 
 :root {
-  --font-kelvinch: Kelvinch;
+  --font-kelvinch-final: Kelvinch;
 }
