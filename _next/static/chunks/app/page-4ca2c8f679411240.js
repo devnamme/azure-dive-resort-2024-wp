@@ -57,7 +57,7 @@
                     ),
                   style: {
                     backgroundImage:
-                      "url('<?php echo THEME_URI ?>/media/landing/about-1.jpg')",
+                      "url('https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/media/landing/about-1.jpg')",
                   },
                 }),
                 (0, s.jsx)("div", {
@@ -67,7 +67,7 @@
                     ),
                   style: {
                     backgroundImage:
-                      "url('<?php echo THEME_URI ?>/media/landing/about-2.jpg')",
+                      "url('https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/media/landing/about-2.jpg')",
                   },
                 }),
                 (0, s.jsx)("div", {
@@ -77,7 +77,7 @@
                     ),
                   style: {
                     backgroundImage:
-                      "url('<?php echo THEME_URI ?>/media/landing/about-3.jpg')",
+                      "url('https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/media/landing/about-3.jpg')",
                   },
                 }),
                 (0, s.jsx)("div", {
@@ -87,7 +87,7 @@
                     ),
                   style: {
                     backgroundImage:
-                      "url('<?php echo THEME_URI ?>/media/landing/about-4.jpg')",
+                      "url('https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/media/landing/about-4.jpg')",
                   },
                 }),
                 (0, s.jsxs)("div", {

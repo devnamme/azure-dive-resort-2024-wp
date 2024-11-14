@@ -149,7 +149,7 @@
                             href: "/",
                             className: "shrink-0",
                             children: (0, n.jsx)("img", {
-                              src: "<?php echo THEME_URI ?>/logos/full-black.svg",
+                              src: "https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/logos/full-black.svg",
                               alt: "Azure Dive Resort",
                               className: "h-12",
                             }),

@@ -107,7 +107,10 @@
               ),
             children: [
               (0, n.jsx)("img", {
-                src: "<?php echo THEME_URI ?>/media/gallery/".concat(r, ".jpg"),
+                src: "https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/media/gallery/".concat(
+                  r,
+                  ".jpg"
+                ),
                 alt: i,
                 className:
                   "h-full min-h-0 w-full rounded-lg object-cover object-center",
