@@ -686,6 +686,12 @@ body {
 .top-header {
   top: var(--h-header);
 }
+.z-0 {
+  z-index: 0;
+}
+.z-10 {
+  z-index: 10;
+}
 .z-30 {
   z-index: 30;
 }
@@ -1091,6 +1097,9 @@ body {
 }
 .items-stretch {
   align-items: stretch;
+}
+.justify-end {
+  justify-content: flex-end;
 }
 .justify-center {
   justify-content: center;
