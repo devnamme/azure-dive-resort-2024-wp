@@ -237,7 +237,7 @@
               ],
             }),
             (0, a.jsx)("img", {
-              src: "<?php echo THEME_URI ?>/media/topographic-3.svg",
+              src: "https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/media/topographic-3.svg",
               className:
                 "pointer-events-none absolute left-0 top-0 z-[1] size-full object-cover object-center opacity-10",
             }),

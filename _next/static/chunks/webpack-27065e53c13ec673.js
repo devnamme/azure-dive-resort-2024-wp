@@ -192,7 +192,8 @@
     (d.tu = function (e) {
       return d.tt().createScriptURL(e);
     }),
-    (d.p = "<?php echo THEME_URI ?>/_next/"),
+    (d.p =
+      "https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/_next/"),
     (i = { 272: 0, 731: 0 }),
     (d.f.j = function (e, t) {
       var n = d.o(i, e) ? i[e] : void 0;

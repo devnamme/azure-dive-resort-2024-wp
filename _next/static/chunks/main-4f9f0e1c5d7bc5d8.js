@@ -501,7 +501,9 @@
         let t = o.assetPrefix || "";
         if (
           (self.__next_set_public_path__(
-            "" + t + "<?php echo THEME_URI ?>/_next/"
+            "" +
+              t +
+              "https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/_next/"
           ),
           (0, w.setConfig)({
             serverRuntimeConfig: {},
@@ -560,7 +562,7 @@
                             640, 750, 828, 1080, 1200, 1920, 2048, 3840,
                           ],
                           imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-                          path: "<?php echo THEME_URI ?>/_next/image",
+                          path: "https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/_next/image",
                           loader: "default",
                           dangerouslyAllowSVG: !1,
                           unoptimized: !1,
@@ -1013,7 +1015,10 @@
               ".json"
             );
             return (0, o.addBasePath)(
-              "<?php echo THEME_URI ?>/_next/data/" + this.buildId + t + p,
+              "https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/_next/data/" +
+                this.buildId +
+                t +
+                p,
               !0
             );
           })(
@@ -1450,7 +1455,10 @@
         return p().then((r) => {
           if (!(t in r)) throw l(Error("Failed to lookup route: " + t));
           let o = r[t].map(
-            (t) => e + "<?php echo THEME_URI ?>/_next/" + encodeURI(t)
+            (t) =>
+              e +
+              "https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/_next/" +
+              encodeURI(t)
           );
           return {
             scripts: o
@@ -2990,7 +2998,7 @@
         n = {
           deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
           imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-          path: "<?php echo THEME_URI ?>/_next/image",
+          path: "https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/_next/image",
           loader: "default",
           loaderFile: "",
           domains: [],
@@ -4790,7 +4798,8 @@
             (t = (0, a.addPathSuffix)(
               (0, o.addPathPrefix)(
                 t,
-                "<?php echo THEME_URI ?>/_next/data/" + e.buildId
+                "https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/_next/data/" +
+                  e.buildId
               ),
               "/" === e.pathname ? "index.json" : ".json"
             )),
@@ -4915,7 +4924,9 @@
           (c.basePath = u));
         let f = c.pathname;
         if (
-          c.pathname.startsWith("<?php echo THEME_URI ?>/_next/data/") &&
+          c.pathname.startsWith(
+            "https://azurediveresort.com/wp-content/themes/azure-dive-resort-2024/_next/data/"
+          ) &&
           c.pathname.endsWith(".json")
         ) {
           let e = c.pathname
