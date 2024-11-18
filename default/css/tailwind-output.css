@@ -1544,6 +1544,10 @@ body {
 .italic {
   font-style: italic;
 }
+.text-\[\#046F9F\] {
+  --tw-text-opacity: 1;
+  color: rgb(4 111 159 / var(--tw-text-opacity));
+}
 .text-\[\#5F6368\] {
   --tw-text-opacity: 1;
   color: rgb(95 99 104 / var(--tw-text-opacity));
@@ -1559,6 +1563,9 @@ body {
 .text-earth {
   --tw-text-opacity: 1;
   color: rgb(93 63 43 / var(--tw-text-opacity));
+}
+.text-earth\/50 {
+  color: rgb(93 63 43 / 0.5);
 }
 .text-ocean-blue {
   --tw-text-opacity: 1;
@@ -2087,12 +2094,8 @@ body {
     grid-template-columns: auto auto auto;
   }
 
-  .sm\:grid-cols-\[repeat\(3\2c auto\)\] {
-    grid-template-columns: repeat(3, auto);
-  }
-
-  .sm\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+  .sm\:grid-cols-\[repeat\(2\2c auto\)\] {
+    grid-template-columns: repeat(2, auto);
   }
 
   .sm\:grid-rows-3 {
@@ -2105,6 +2108,14 @@ body {
 
   .sm\:grid-rows-\[5fr_4fr\] {
     grid-template-rows: 5fr 4fr;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:items-start {
+    align-items: flex-start;
   }
 
   .sm\:items-center {
@@ -2348,10 +2359,6 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .md\:order-1 {
-    order: 1;
-  }
-
   .md\:order-2 {
     order: 2;
   }
@@ -2405,10 +2412,6 @@ body {
     grid-template-columns: 1fr 550px 1fr;
   }
 
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
   .md\:items-start {
     align-items: flex-start;
   }
@@ -2441,10 +2444,6 @@ body {
 
   .md\:pr-22\.5 {
     padding-right: 5.625rem;
-  }
-
-  .md\:text-left {
-    text-align: left;
   }
 }
 
