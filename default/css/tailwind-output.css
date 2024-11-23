@@ -620,9 +620,6 @@ body {
 .text-overline {
   text-transform: uppercase;
 }
-.marquee-left {
-  animation: marquee-left 40s linear infinite;
-}
 .pointer-events-none {
   pointer-events: none;
 }
@@ -1629,6 +1626,33 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.marquee-left {
+  animation: marquee-left 40s linear infinite;
+}
+[class*="fade-up"] {
+  animation: fade-up 450ms ease-out 1 both;
+}
+.fade-up-0 {
+  animation-delay: 0ms;
+}
+.fade-up-1 {
+  animation-delay: 150ms;
+}
+.fade-up-2 {
+  animation-delay: 300ms;
+}
+.fade-up-3 {
+  animation-delay: 450ms;
+}
+.fade-up-4 {
+  animation-delay: 600ms;
+}
+.fade-up-5 {
+  animation-delay: 750ms;
+}
+.fade-up-6 {
+  animation-delay: 900ms;
+}
 
 @keyframes marquee-left {
   0% {
@@ -1637,6 +1661,18 @@ body {
 
   100% {
     transform: translate(-100%, 0);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translate(0, 64px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }
 
